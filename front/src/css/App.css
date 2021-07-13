@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+  font-weight: 100;
+}
+
+a:hover{
+  color: black;
+  text-decoration: none;
+}
+
+.main-container {
+  padding: 10rem;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  transition: all ease-in-out 0.5s;
+  text-transform: capitalize;
+}
+
+.title:hover{
+  color: grey;
+  transform: scale(1.05);
+}
+
+.underline {
+  height: 0.25rem;
+  width: 5rem;
+  background: cornflowerblue;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-img{
+  width: 100%;
+  padding: 50px;
+}
+
+.login-container{
+  padding: 10rem;
+  width: 100%;
+}
+
+.main-input{
+  margin: 20px;
+  width: 20rem;
+  padding: 10px;
+  border-radius: 5px;
+  border-style: none;
+  border: 1px solid cornflowerblue;
+}
+
+.main-button{
+  margin: 20px;
+  width: 20rem;
+  background-color: cornflowerblue;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  border-style: none;
+  border-color: white;
+}
+
+.post-card{
+  background-color: cornflowerblue;
+  color: white;
+  padding: 20px;
+  margin: 20px;
+  width: 50%;
+  border-radius: 5px;
+}
+
+.return-button{
+  background-color: whitesmoke;
+  color: black;
+}
+
+.return-button-container{
+  width: 100%!important;
+}
+
+.photo-card{
+  background-color: whitesmoke;
+  border-radius: 5px;
+  width: 50%;
+  padding: 30px;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination {
+  margin: 15px auto;
+  display: flex;
+  list-style: none;
+  outline: none;
+}
+.pagination > .active > a{
+  background-color: cornflowerblue ;
+  border-color: cornflowerblue ;
+  color: #fff;
+}
+.pagination > li > a{
+  border: 1px solid cornflowerblue ;
+  padding: 5px 10px;
+  outline: none;
+  cursor: pointer;
+}
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus{
+  background-color: cornflowerblue ;
+  border-color: cornflowerblue;
+  outline: none ;
+}
+.pagination > li > a, .pagination > li > span{
+  color: cornflowerblue
+}
+.pagination > li:first-child > a, .pagination > li:first-child > span, .pagination > li:last-child > a, .pagination > li:last-child > span{
+  border-radius: unset
+}

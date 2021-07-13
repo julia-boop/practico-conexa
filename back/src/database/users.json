@@ -1,0 +1,35 @@
+[
+    {
+      "age": 23,
+      "name": "Bird Ramsey",
+      "gender": "male",
+      "company": "NIMON",
+      "email": "birdramsey@nimon.com",
+      "password": "$2a$10$xc.lIw2JP/rxb9fsJwba/umLUgnzrdkyOOo2jaZVLBUa0yHJagtVi"
+
+    },
+    {
+      "age": 31,
+      "name": "Lillian Burgess",
+      "gender": "female",
+      "company": "LUXURIA",
+      "email": "lillianburgess@luxuria.com",
+      "password": "$2a$10$5gmElk/cSkR3qtB5sUkrM.4EFERYNX1rHdPnKPpx8ML.bihM2etaG"
+    },
+    {
+      "age": 34,
+      "name": "Kristie Cole",
+      "gender": "female",
+      "company": "QUADEEBO",
+      "email": "kristiecole@quadeebo.com",
+      "password": "$2a$10$vtKXWJAz3V.SBTTuXcqnPe2/nihNMmzdbSlfYa9gYKNzyXBuBsXLy"
+    },
+    {
+      "age": 30,
+      "name": "Leonor Cross",
+      "gender": "female",
+      "company": "GRONK",
+      "email": "leonorcross@gronk.com",
+      "password": "$2a$10$DepGcxsQPe6Zf8rp3Iw6Puuj1PT0adY1YyDsk.uClCiw8QeZ5OJRC"
+    }
+  ]
