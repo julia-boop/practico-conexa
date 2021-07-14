@@ -31,7 +31,7 @@ class Post extends Component {
 
         <div className="main-container d-flex justify-content-center flex-wrap">
             <div className="return-button-container d-flex justify-content-center">
-                <button className="main-button return-button"><Link to="/" exact="true">Volver al Inicio</Link></button>
+                <button className="main-button return-button"><Link to="/" exact="true">Home</Link></button>
             </div>
 
             {this.state.posts.map((post, i) => {

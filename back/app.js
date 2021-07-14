@@ -6,11 +6,13 @@ var logger = require('morgan');
 var cors = require('cors');
 
 
+
 var indexRouter = require('./src/routes/mainRouter');
 
 var app = express();
 
-app.set('view engine', 'react');
+app.set ('view engine', 'ejs')
+app.set('views', path.join(__dirname, './src/views'));
 
 app.use(cors())
 app.use(logger('dev'));

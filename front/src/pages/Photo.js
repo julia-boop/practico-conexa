@@ -4,7 +4,7 @@ import axios from 'axios';
 import ReactPaginate from 'react-paginate';
 
 
-class Post extends Component {
+class Photo extends Component {
     constructor(props){
         super(props)
         this.state = {
@@ -15,6 +15,8 @@ class Post extends Component {
         }
     }
     apiCall(url) {
+        // -------------------- Paginacion -------------------- 
+        // logica funcional de paginacion en base al estado del componente haciendo uso de la libreria React Paginate
         axios.get(url)
             .then(res => {
                 const data = res.data
@@ -47,6 +49,7 @@ class Post extends Component {
 
     };
 
+    // llamado al endpoint definido desde el back que busca las API de fotos 
     componentDidMount(){
         this.apiCall("http://localhost:3002/fetchPhotos")
     }
@@ -56,7 +59,7 @@ class Post extends Component {
 
         <div className="main-container d-flex justify-content-center flex-wrap">
             <div className="return-button-container d-flex justify-content-center">
-                <button className="main-button return-button"><Link to="/" exact="true">Volver al Inicio</Link></button>
+                <button className="main-button return-button"><Link to="/" exact="true">Home</Link></button>
             </div>
 
             {this.state.photoData}
@@ -79,4 +82,4 @@ class Post extends Component {
     }
 }
 
-export default Post
+export default Photo
