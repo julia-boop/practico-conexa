@@ -1,13 +1,13 @@
 ## Conexa
 ### Practico NodeJS & React 😎
 Contenidos
-1. Front
+1. Front (Puerto 3000)
     - Componentes
         - App
         - Login
         - Post
         - Photo
-2. Back
+2. Back (Puerto 3002)
     - Main Controller 
         * Metodos de login, busqueda de posts, fotos y autenticacion de usuario
     - Main Router
