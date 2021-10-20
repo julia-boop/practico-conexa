@@ -19,5 +19,5 @@ Contenidos
 ----------------------------
 # Datos relevantes
 Credenciales de acceso para testear el Login
-Email: birdramsey@nimon.com
-Contraseña 1234
+- Email: birdramsey@nimon.com
+- Contraseña 1234
