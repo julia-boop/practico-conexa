@@ -16,3 +16,8 @@ Contenidos
         * Middleware de autenticacion de usuario
     - Database
         * Base de datos provisoria para facilitar el clonado del proyecto en formato .json
+----------------------------
+# Datos relevantes
+Credenciales de acceso para testear el Login
+Email: birdramsey@nimon.com
+Contraseña 1234
