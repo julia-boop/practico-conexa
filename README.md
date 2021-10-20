@@ -1,5 +1,5 @@
-## Conexa
-### Practico NodeJS & React 😎
+# Conexa
+## Practico NodeJS & React 😎
 Contenidos
 1. Front (Puerto 3000)
     - Componentes
@@ -17,7 +17,7 @@ Contenidos
     - Database
         * Base de datos provisoria para facilitar el clonado del proyecto en formato .json
 ----------------------------
-# Datos relevantes
-Credenciales de acceso para testear el Login
+### Datos relevantes
+Credenciales de acceso para testear el Login:
 - Email: birdramsey@nimon.com
-- Contraseña 1234
+- Contraseña: 1234
