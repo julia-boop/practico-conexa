@@ -3,9 +3,21 @@ import {BrowserRouter, Switch, Route, Link} from 'react-router-dom';
 import Login from './pages/Login';
 import Post from './pages/Post';
 import Photo from './pages/Photo';
+import HeaderPhoto from './pages/HeaderPhoto'
 import icon from './img/homeicon.png';
+import {useEffect, useState} from 'react';
+import HeaderPost from './pages/HeaderPost';
 
 function App() {
+  const [IsToken, setIsToken] = useState(false)
+
+  useEffect(() => {
+    let token = localStorage.getItem('token')
+    if(token){
+      setIsToken(true)
+    }
+  })
+
   return (
     <div className="navbar d-flex justify-content-around">
       <BrowserRouter>
@@ -13,14 +25,12 @@ function App() {
           <h1 className="title"><Link to="/login" exact="true">login</Link></h1>
           <div className="underline"/>
         </div>
-        <div>
-          <h1 className="title"><Link to="/posts" exact="true">posts</Link></h1>
-          <div className="underline"/>
-        </div>
-        <div>
+        {IsToken && <HeaderPost/>}
+        {IsToken && <HeaderPhoto/>}
+        {/* <div>
           <h1 className="title"><Link to="/photos" exact="true">photos</Link></h1>
           <div className="underline"/>
-        </div>
+        </div> */}
         <Switch>
           <Route path="/login" exact component={Login}/>
           <Route path="/posts" exact component={Post}/>

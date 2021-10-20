@@ -3,11 +3,13 @@ import axios from 'axios';
 import {Link} from 'react-router-dom';
 
 
+
 function Login() {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const [message, setMessage] = useState("")
     const [loginStatus, setLoginStatus] = useState(false)
+    const [authenticated, setAuthenticated] = useState(false)
 
     // manda los datos ingresados por el usuario a traves de la libreria axios al back, el back los proceso y cambia el estado del elemento <p/> en base a la respuesta que da manda el back
     const login = () => {
@@ -34,6 +36,7 @@ function Login() {
         .then((res) => {
             if(res.data.auth){
                 setMessage(res.data.message)
+                setAuthenticated(true)
             } else {
                 setMessage(res.data.message)
             }
@@ -45,6 +48,7 @@ function Login() {
         <div className="login-container d-flex justify-content-center align-items-center flex-column">
                 <h1 className="title">Log In</h1>
                 <p>{message}</p>
+                <label>Email</label>
                 <input 
                     className="main-input"
                     type="email" 
@@ -52,6 +56,7 @@ function Login() {
                         setEmail(e.target.value)
                     }}
                 />
+                <label>Password</label>
                 <input 
                     className="main-input"
                     type="password"

@@ -139,3 +139,12 @@ a:hover{
 .auth-button{
   background-color: darkseagreen;
 }
+
+label{
+  margin: 20px;
+  width: 20rem;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+  margin-bottom: 0px;
+}

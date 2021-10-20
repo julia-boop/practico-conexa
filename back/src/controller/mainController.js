@@ -7,7 +7,9 @@ const jwt = require('jsonwebtoken');
 const usersFilePath = path.join(__dirname, '../database/users.json');
 const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 
-
+// nb 
+// uml
+// manejo de error 
 
 module.exports = {
 
